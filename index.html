@@ -12,7 +12,6 @@
 
   <!-- Header -->
   <header class="header">
-    <!-- <div class="container"> -->
 
     <div class="header__container">
       <nav class="header__nav">
@@ -52,8 +51,6 @@
         </a>
       </div>
     </div>
-
-    <!-- </div> -->
   </header>
 
   <main>
@@ -304,7 +301,8 @@
         <h3 class="form__title">
           Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок
         </h3>
-        <input class="modal__form__input form__input" type="text" placeholder="Ваше ім'я та прізвище" required>
+        <input class="modal__form__input form__input" type="text" placeholder="Ваше ім'я та прізвище" required
+          title="Напишіть Ваше ім'я та прізвище кирилицею" pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
         <input class="modal__form__input form__input" type="text" placeholder="Ваш номер телефону" required
           pattern="^\+[0-9]{12}">
         <input class="modal__form__input form__input" type="text" placeholder="Ваша електронна пошта" required>
@@ -318,14 +316,6 @@
       </form>
     </div>
   </div>
-
-
-
-
-
-
-
-
 
 
   <script src="js/modal.js"></script>
