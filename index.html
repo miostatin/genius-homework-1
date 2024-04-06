@@ -11,49 +11,49 @@
 <body>
 
   <!-- Header -->
-  <header>
-    <div class="container">
+  <header class="header">
+    <!-- <div class="container"> -->
 
-      <div class="header__container">
-        <nav class="header__nav">
-          <a class="header__logo" href="/">
-            <img src="images/logo.svg" width="74" height="42" alt="Логотип">
-          </a>
-          <ul class="menu__list">
-            <li>
-              <a class="menu__list-link" href="#about">Про нас</a>
-            </li>
-            <li>
-              <a class="menu__list-link" href="#whywe">Чому ми</a>
-            </li>
-            <li>
-              <a class="menu__list-link" href="#procedures">Наші процедури</a>
-            </li>
-            <li>
-              <a class="menu__list-link" href="#contacts">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__social">
-          <a class="header__social-link" href="#" target="_blank">
-            <svg width="32" height="32">
-              <use href="images/icons.svg#icon-phone"></use>
-            </svg>
-          </a>
-          <a class="header__social-link" href="#" target="_blank">
-            <svg width="32" height="32">
-              <use href="images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-          <a class="header__social-link" href="#" target="_blank">
-            <svg width="32" height="32">
-              <use href="images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </div>
+    <div class="header__container">
+      <nav class="header__nav">
+        <a class="header__logo" href="/">
+          <img src="images/logo.svg" width="74" height="42" alt="Логотип">
+        </a>
+        <ul class="menu__list">
+          <li>
+            <a class="menu__list-link" href="#about">Про нас</a>
+          </li>
+          <li>
+            <a class="menu__list-link" href="#whywe">Чому ми</a>
+          </li>
+          <li>
+            <a class="menu__list-link" href="#procedures">Наші процедури</a>
+          </li>
+          <li>
+            <a class="menu__list-link" href="#contacts">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__social">
+        <a class="header__social-link" href="#" target="_blank">
+          <svg class="social-icon" width="32" height="32">
+            <use href="images/icons.svg#icon-phone"></use>
+          </svg>
+        </a>
+        <a class="header__social-link" href="#" target="_blank">
+          <svg class="social-icon" width="32" height="32">
+            <use href="images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a class="header__social-link" href="#" target="_blank">
+          <svg class="social-icon" width="32" height="32">
+            <use href="images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
       </div>
-
     </div>
+
+    <!-- </div> -->
   </header>
 
   <main>
@@ -67,7 +67,7 @@
             <h1 class="hero__title title">
               Beauty Zone
             </h1>
-            <button class="button" type="button">
+            <button class="modal-btn-open button" type="button">
               Замовити дзвінок
             </button>
             <p class="hero__desc">
@@ -156,12 +156,15 @@
             </svg>
           </button>
           <ul class="procedures__items">
+
             <li class="procedures__item">
-              <img src="images/procedures-img1.png" alt="">
+              <img src="images/procedures-img1.jpg" alt="">
               <p class="procedures__item-text">
                 Маски <br> для обличчя
               </p>
             </li>
+
+
             <li class="procedures__item">
               <img src="images/procedures-img2.png" alt="">
               <p class="procedures__item-text">
@@ -175,7 +178,7 @@
               </p>
             </li>
           </ul>
-          <button class="carousel-button">
+          <button class="carousel-button carousel-button-next">
             <svg width="17">
               <use href="images/icons.svg#icon-arrow"></use>
             </svg>
@@ -190,23 +193,27 @@
         <h2 class="title__center title">
           Як нас <span class="accent">знайти</span>
         </h2>
-        <iframe class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9323939867572!2d30.513304389479654!3d50.44235991470448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2sTarasa%20Shevchenko%20Blvd%2C%205%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sbe!4v1710077243271!5m2!1sen!2sbe"
-          width="605" height="481" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <form class="form" action="/">
-          <h3 class="form__title">
-            Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок
-          </h3>
-          <input type="text" placeholder="Ваше ім'я та прізвище">
-          <input type="text" placeholder="Ваш номер телефону">
-          <input type="text" placeholder="Ваша електронна пошта">
-          <button class="contacts__button button" type="submit">Записатись безкоштовно</button>
-          <p class="form__confidensy">
-            Натискаючи на кнопку я погоджуюсь
-            <a class="form__confidensy-link" href="#" target="_blank">з політикою конфіденційності</a>
-          </p>
-        </form>
+        <div class="contacts__container">
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9323939867572!2d30.513304389479654!3d50.44235991470448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2sTarasa%20Shevchenko%20Blvd%2C%205%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sbe!4v1710077243271!5m2!1sen!2sbe"
+            width="605" height="481" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <form class="form" action="/">
+            <h3 class="form__title">
+              Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок
+            </h3>
+            <input class="form__input" type="text" placeholder="Ваше ім'я та прізвище" required>
+            <input class="form__input" type="text" placeholder="Ваш номер телефону" required pattern="^\+[0-9]{12}">
+            <input class="form__input" type="text" placeholder="Ваша електронна пошта" required>
+            <button class="contacts__button button" type="submit">
+              Записатись безкоштовно
+            </button>
+            <p class="form__confidensy">
+              Натискаючи на кнопку я погоджуюсь
+              <a class="form__confidensy-link" href="#" target="_blank">з політикою конфіденційності</a>
+            </p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -222,16 +229,16 @@
             </a>
           </div>
           <ul class="footer__menu">
-            <li>
+            <li class="footer__menu__item">
               <a class="footer__menu-link" href="#about">Про нас</a>
             </li>
-            <li>
+            <li class="footer__menu__item">
               <a class="footer__menu-link" href="#whywe">Чому ми</a>
             </li>
-            <li>
+            <li class="footer__menu__item">
               <a class="footer__menu-link" href="#procedures">Наші процедури</a>
             </li>
-            <li>
+            <li class="footer__menu__item">
               <a class="footer__menu-link" href="#contacts">Контакти</a>
             </li>
           </ul>
@@ -253,30 +260,27 @@
             <ul class="address__social">
               <li>
                 <a href="#" target="_blank">
-                  <svg class="address__social-icon" width="42" height="42">
+                  <svg class="address__social-icon social-icon" width="42" height="42">
                     <use href="images/icons.svg#icon-phone"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <svg class="address__social-icon" width="42" height="42">
+                  <svg class="address__social-icon social-icon" width="42" height="42">
                     <use href="images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <svg class="address__social-icon" width="42" height="42">
+                  <svg class="address__social-icon social-icon" width="42" height="42">
                     <use href="images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </ul>
-
-
-
           <div class="address__copy">
             <a class="address__link" href="#" target="_blank">
               Політика конфіденційності
@@ -285,18 +289,46 @@
               &copy; 2022 Дані захищені
             </p>
           </div>
-
         </address>
       </div>
 
-      <!-- <img src="images/footer-img.png" alt="Препарати"> -->
+      <img class="footer__img" src="images/footer-img.png" alt="Препарати">
     </div>
   </footer>
 
+  <div class="backdrop is-hidden">
+    <div class="modal">
+      <button class="modal-btn-close"></button>
+      <h2 class="modal__title title">Замовити дзвінок</h2>
+      <form class="modal__form form" action="/">
+        <h3 class="form__title">
+          Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок
+        </h3>
+        <input class="modal__form__input form__input" type="text" placeholder="Ваше ім'я та прізвище" required>
+        <input class="modal__form__input form__input" type="text" placeholder="Ваш номер телефону" required
+          pattern="^\+[0-9]{12}">
+        <input class="modal__form__input form__input" type="text" placeholder="Ваша електронна пошта" required>
+        <button class="contacts__button button" type="submit">
+          Записатись безкоштовно
+        </button>
+        <p class="form__confidensy">
+          Натискаючи на кнопку я погоджуюсь
+          <a class="form__confidensy-link" href="#" target="_blank">з політикою конфіденційності</a>
+        </p>
+      </form>
+    </div>
+  </div>
 
 
 
 
+
+
+
+
+
+
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
