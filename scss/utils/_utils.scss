@@ -1,0 +1,44 @@
+.section {
+  padding-bottom: 96px;
+}
+
+.container {
+  max-width: 1264px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.title {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 64px;
+  margin-bottom: 48px;
+}
+
+.title__center {
+  text-align: center;
+}
+
+.accent {
+  color: var(--brand-color);
+}
+
+
+
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.is-hidden {
+  visibility: none;
+  opacity: 0;
+  pointer-events: none;
+}

@@ -1,0 +1,36 @@
+/* Fonts */
+@import "utils/fonts";
+
+/* Base */
+@import "base";
+
+/* Utils */
+@import "utils/variables";
+@import "utils/utils";
+@import "utils/keyframes";
+@import "utils/forms";
+
+
+
+
+
+
+/* Modal */
+@import "components/modal";
+@import "components/buttons";
+@import "components/links";
+
+/* Header */
+@import "sections/header";
+/* Hero section */
+@import "sections/hero-section";
+/* About section */
+@import "sections/about-section";
+/* Why We section */
+@import "sections/whywe-section";
+/* Procedures section */
+@import "sections/procedures-section";
+/* Contacts section */
+@import "sections/contacts-section";
+/* Footer */
+@import "sections/footer";

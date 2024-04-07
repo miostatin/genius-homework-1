@@ -1,0 +1,89 @@
+.about__container {
+  display: flex;
+  gap: 60px;
+  position: relative;
+}
+
+.about__content {
+  flex-basis: 675px;
+  padding-top: 40px;
+}
+
+.about__title {
+  max-width: 509px;
+  margin-bottom: 40px;
+}
+
+.about__text {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.about__text-desc {
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.about__text-desc:last-child {
+  margin-bottom: 0;
+}
+
+.about__img {
+  border-radius: 50%;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  display: block;
+}
+
+.about__img:first-child {
+  margin-bottom: 40px;
+}
+
+.about__img:last-child {
+  margin-left: 200px;
+}
+
+.about__text p:first-child {
+  margin-bottom: 40px;
+}
+
+/* Stars icons */
+.about__content::after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/purpleStar-icon.svg');
+  top: 355px;
+  right: 360px;
+  animation-name: rotateLeft;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+}
+
+.about__images::before {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/blueStar-icon.svg');
+  top: 30px;
+  right: 0;
+  animation-name: rotateRight;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+}
+
+.about__images::after {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/grayStar-icon.svg');
+  top: 269px;
+  right: 33px;
+  animation-name: scale;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}

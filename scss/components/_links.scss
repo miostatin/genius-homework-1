@@ -1,0 +1,9 @@
+.social-icon {
+  transition: transform .2s, stroke .2s, fill .2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  fill: var(--brand-color);
+  stroke: var(--brand-color);
+}
