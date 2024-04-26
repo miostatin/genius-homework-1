@@ -33,36 +33,3 @@
 	border-color: currentColor;
 	cursor: not-allowed;
 }
-
-
-
-
-
-// contacts
-.contacts__button {
-	margin-bottom: 8px;
-}
-
-.contacts__button:hover {
-	background-color: var(--white-color);
-}
-
-.contacts__button[disabled]:hover {
-	background-color: lightgray;
-}
-
-// modal 
-
-.modal-btn-close {
-	position: absolute;
-	top: 42px;
-	right: 42px;
-	background-image: url('../images/modal-close.svg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: transparent;
-	width: 32px;
-	height: 32px;
-	border: none;
-	cursor: pointer;
-}
