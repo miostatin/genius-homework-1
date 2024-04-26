@@ -1,0 +1,18 @@
+.section {
+	padding-bottom: 40px;
+
+	@media screen and (min-width: $bp-tablet) {
+		padding-bottom: 65px;
+	}
+
+	@media screen and (min-width: $bp-desktop) {
+		padding-bottom: 95px;
+	}
+}
+
+.container {
+	max-width: 1264px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}

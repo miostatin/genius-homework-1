@@ -1,0 +1,57 @@
+.mobile-menu {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 16px 20px;
+	background-color: var(--white-color);
+	transform: translateX(100%);
+	transition: transform .4s;
+
+	&-close {
+		position: absolute;
+		right: 23px;
+		top: 22px;
+		width: 24px;
+		height: 24px;
+		border: none;
+		padding: 0;
+		background-color: transparent;
+		background-image: url('../images/burger-close.svg');
+
+	}
+
+
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	&__logo {
+		width: 74px;
+		height: 42px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		margin-bottom: 16px;
+
+		&-link {
+			font-size: 14px;
+		}
+	}
+
+	&__social {
+		display: flex;
+		gap: 16px;
+	}
+}
+
+.is-open {
+	transform: translateX(0);
+}

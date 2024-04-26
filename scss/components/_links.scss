@@ -1,9 +1,30 @@
-.social-icon {
-  transition: transform .2s, stroke .2s, fill .2s;
-}
+.menu__list {
+	display: none;
 
-.social-icon:hover {
-  transform: scale(1.2);
-  fill: var(--brand-color);
-  stroke: var(--brand-color);
+	@media screen and (min-width: 820px) {
+		display: flex;
+		gap: 40px;
+		flex-grow: 1;
+		justify-content: center;
+		text-align: center;
+	}
+
+	@media screen and (min-width: 900px) {
+		gap: 50px;
+	}
+
+	@media screen and (min-width: $bp-desktop) {
+		margin-left: 100px;
+		gap: 56px;
+	}
+
+	&-link {
+		line-height: 1.2;
+		color: var(--primary-color);
+		transition: color .2s;
+	}
+
+	&-link:hover {
+		color: var(--brand-color);
+	}
 }

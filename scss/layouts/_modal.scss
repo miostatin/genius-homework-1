@@ -1,0 +1,36 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity .3s;
+	padding: 10px;
+}
+
+.modal {
+	position: relative;
+	padding: 90px 15px 60px;
+	background-color: var(--primary-color);
+	background-image: url('../images/footer-bg.png');
+	text-align: center;
+	border-radius: 48px;
+
+	@media screen and (min-width: $bp-tablet) {
+		padding: 42px 144px;
+	}
+
+	&__title {
+		color: var(--white-color);
+		max-width: 435px;
+		margin: 0 auto 25px;
+
+		@media screen and (min-width: $bp-tablet) {
+			margin-bottom: 42px;
+		}
+	}
+}

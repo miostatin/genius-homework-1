@@ -1,0 +1,180 @@
+.about {
+	margin-top: -40px;
+
+	@media screen and (min-width: $bp-tablet) {
+		margin-top: 0;
+	}
+
+	&__container {
+		display: flex;
+		// gap: 60px;
+		position: relative;
+
+		@media screen and (min-width: $bp-tablet) {
+			flex-direction: column;
+		}
+
+		@media screen and (min-width: $bp-desktop) {
+			flex-direction: row;
+			gap: 60px;
+		}
+	}
+
+	&__content {
+		flex-basis: 680px;
+		margin: 0 auto;
+
+		@media screen and (min-width: $bp-tablet) {
+			adding-top: 40px;
+		}
+
+		@media screen and (min-width: $bp-tablet) {
+			margin: 0;
+			text-align: left;
+		}
+	}
+
+	&__title {
+		max-width: 509px;
+		margin-left: auto;
+		margin-right: auto;
+
+		@media screen and (min-width: $bp-tablet) {
+			margin-left: 0;
+		}
+	}
+
+	&__text {
+		font-size: 22px;
+		line-height: 1.7;
+	}
+
+	&__text-desc {
+		margin-bottom: 16px;
+		font-size: 18px;
+		line-height: 1.7;
+
+		@media screen and (min-width: $bp-tablet) {
+			font-size: 22px;
+			margin-bottom: 40px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+
+
+	&__images {
+		display: none;
+
+		@media screen and (min-width: $bp-tablet) {
+			display: flex;
+			justify-content: space-around;
+			margin-top: -120px;
+		}
+
+		@media screen and (min-width: $bp-desktop) {
+			display: block;
+			margin-top: 0;
+		}
+	}
+
+	&__img {
+		border-radius: 50%;
+		align-items: flex-end;
+		justify-content: space-between;
+		position: relative;
+		display: block;
+		height: 335px;
+	}
+
+	&__img:first-child {
+		margin-bottom: 40px;
+	}
+
+	&__img:last-child {
+
+
+		@media screen and (min-width: $bp-desktop) {
+			margin-left: 200px;
+		}
+	}
+
+	&__text p:first-child {
+		margin-bottom: 40px;
+	}
+}
+
+
+
+
+/* Stars icons */
+.about__content::after {
+	position: absolute;
+	content: '';
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/purpleStar-icon.svg');
+	top: 475px;
+	right: 2px;
+	animation-name: rotateLeft;
+	animation-duration: 24s;
+	animation-iteration-count: infinite;
+
+	@media screen and (min-width: $bp-mobile) {
+		top: 350px;
+	}
+
+	@media screen and (min-width: 550px) {
+		top: 305px;
+	}
+
+	@media screen and (min-width: $bp-tablet) {
+		top: 375px;
+		right: 75px;
+	}
+
+	@media screen and (min-width: $bp-desktop) {
+		top: 355px;
+		right: 360px;
+	}
+
+}
+
+.about__images::before {
+	display: none;
+
+	@media screen and (min-width: $bp-tablet) {
+		display: block;
+		position: absolute;
+		content: '';
+		width: 40px;
+		height: 40px;
+		background-image: url('../images/blueStar-icon.svg');
+		top: 30px;
+		right: 0;
+		animation-name: rotateRight;
+		animation-duration: 24s;
+		animation-iteration-count: infinite;
+	}
+}
+
+.about__images::after {
+	display: none;
+
+	@media screen and (min-width: $bp-tablet) {
+		display: block;
+		position: absolute;
+		content: '';
+		width: 16px;
+		height: 16px;
+		background-image: url('../images/grayStar-icon.svg');
+		top: 269px;
+		right: 33px;
+		animation-name: scale;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+	}
+}

@@ -1,0 +1,90 @@
+.hero {
+	padding: 116px 0 207px;
+	background-image: linear-gradient(69deg, rgba(255, 255, 255, 1.00) 0%, rgba(255, 255, 255, 0.78) 31%, rgba(255, 255, 255, 0.20) 50%, rgba(255, 255, 255, 0.00) 68%), url('../images/hero-bg.png');
+	background-size: cover;
+	background-position: -575px 0;
+	background-repeat: no-repeat;
+
+
+	@media screen and (min-width: 376px) {
+		background-position: -482px 0;
+	}
+
+	@media screen and (min-width: $bp-mobile) {
+		background-position: -570px 0;
+	}
+
+	@media screen and (min-width: 700px) {
+		background-position: center;
+	}
+
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__content {
+		margin: 0 auto;
+
+		@media screen and (min-width: $bp-tablet) {
+			margin: 0;
+			padding-left: 105px;
+		}
+	}
+
+	&__img {
+		align-self: flex-start;
+	}
+
+	&__title {
+		font-size: 54px;
+		color: var(--brand-color);
+		margin-bottom: 40px;
+		line-height: 0.8;
+		max-width: 530px;
+		text-align: center;
+
+		@media screen and (min-width: $bp-mobile) {
+			font-size: 100px;
+			text-align: left;
+		}
+
+		@media screen and (min-width: $bp-tablet) {
+			font-size: 140px;
+		}
+	}
+
+	&__text {
+		margin-bottom: 16px;
+		padding-left: 6px;
+		font-size: 12px;
+		text-align: center;
+
+		@media screen and (min-width: $bp-mobile) {
+			font-size: 18px;
+			text-align: left;
+		}
+	}
+
+	&__desc {
+		color: #4A4A4A;
+		line-height: 1.5;
+		max-width: 301px;
+		margin: 8px auto 0;
+		font-size: 11px;
+		text-align: center;
+
+		@media screen and (min-width: $bp-tablet) {
+			margin-top: 14px;
+			font-size: 12px;
+			margin: 14px 0 0 0;
+
+		}
+
+		@media screen and (min-width: $bp-desktop) {
+			text-align: left;
+		}
+	}
+
+}
